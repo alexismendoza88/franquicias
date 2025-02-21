@@ -22,5 +22,24 @@
 
 
 
+<H2>Prerequsitos para desplegar </H2>
+
+
+1.Descargar la imagen de mongodb para docker (mongodb/mongodb-community-server)
+comando: docker pull mongodb/mongodb-community-server:latest 
+
+2.termiando paso 1 crear docker dockerfile en franquicias\src (en repositorio se ecnuentra ya estructurado el archivo)
+comando : ejeuctar "docker build." (abrir comando en el foder donde esta ubicado dockerfile "franquicias\src")
+
+3.terminado paso 2  crear archivo docker-compose.yml en en franquicias\src (en repositorio se ecnuentra ya estructurado el archivo)
+comando: ejeuctar "docker-compose up2 (abrir comando en el foder donde esta ubicado dockerfile "franquicias\src")
+
+
+<H2>Herramientas de pruebas </H2>
+
+*Para probar lso endpoitns utilzia herramienats como Postman,Insomnia
+
+<h2>Estructura de los Endpoints</h2>
+
 
 
