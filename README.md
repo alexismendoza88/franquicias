@@ -1,4 +1,4 @@
-<H2>Prerequsitos</H2>
+<H2>Prerequisitos</H2>
 
 *Instalar Docker
 
@@ -22,7 +22,7 @@
 
 
 
-<H2>Prerequsitos para desplegar </H2>
+<H2>Prerequisitos para desplegar </H2>
 
 
 1.Descargar la imagen de mongodb para docker (mongodb/mongodb-community-server)
