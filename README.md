@@ -4,7 +4,7 @@
 
 *Instalar Java jdk 17
 
-*Tu IDE prferido para java (NetBEANTS)
+*Tu IDE preferido para java (NetBEANTS)
 
 <H2>Pasos a seguir</H2>
 
@@ -29,15 +29,16 @@
 comando: "docker pull mongodb/mongodb-community-server:latest"
 
 2.Terminado paso 1 crear docker dockerfile en franquicias\src (en repositorio se ecnuentra ya estructurado el archivo)
-comando : ejeuctar "docker build." (abrir comando en el foder donde esta ubicado dockerfile "franquicias\src")
+comando : ejeuctar "docker build." (abrir comando en el folder. Donde esta ubicado dockerfile "franquicias\src")
 
 3.Terminado paso 2  crear archivo docker-compose.yml en en franquicias\src (en repositorio se ecnuentra ya estructurado el archivo)
-comando: ejeuctar "docker-compose up" (abrir comando en el foder donde esta ubicado dockerfile "franquicias\src")
+comando: ejeuctar "docker-compose up" (abrir comando en el folder. Donde esta ubicado dockerfile "franquicias\src")
 
+Nota importante:"Recuerda que los datos de como puerto y nombre  de basede datos para mongo deben ser los mismos que estan configurados en franquicias\src\main\resources\application.properties"
 
 <H2>Herramientas de pruebas </H2>
 
-*Para probar lso endpoitns utiliza herramienats como Postman,Insomnia
+*Para probar los endpoints utiliza herramientas como Postman,Insomnia
 
 <h2>Estructura de los Endpoints</h2>
 
