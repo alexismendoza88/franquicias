@@ -6,7 +6,7 @@
 
 *Tu IDE prferido para java (NetBEANTS)
 
-<H2>Paos a seguir</H2>
+<H2>Pasos a seguir</H2>
 
 1.Configurar el proyecto con Spring Boot, WebFlux y MongoDB.
 
@@ -26,20 +26,43 @@
 
 
 1.Descargar la imagen de mongodb para docker (mongodb/mongodb-community-server)
-comando: docker pull mongodb/mongodb-community-server:latest 
+comando: "docker pull mongodb/mongodb-community-server:latest"
 
-2.termiando paso 1 crear docker dockerfile en franquicias\src (en repositorio se ecnuentra ya estructurado el archivo)
+2.Terminado paso 1 crear docker dockerfile en franquicias\src (en repositorio se ecnuentra ya estructurado el archivo)
 comando : ejeuctar "docker build." (abrir comando en el foder donde esta ubicado dockerfile "franquicias\src")
 
-3.terminado paso 2  crear archivo docker-compose.yml en en franquicias\src (en repositorio se ecnuentra ya estructurado el archivo)
-comando: ejeuctar "docker-compose up2 (abrir comando en el foder donde esta ubicado dockerfile "franquicias\src")
+3.Terminado paso 2  crear archivo docker-compose.yml en en franquicias\src (en repositorio se ecnuentra ya estructurado el archivo)
+comando: ejeuctar "docker-compose up" (abrir comando en el foder donde esta ubicado dockerfile "franquicias\src")
 
 
 <H2>Herramientas de pruebas </H2>
 
-*Para probar lso endpoitns utilzia herramienats como Postman,Insomnia
+*Para probar lso endpoitns utiliza herramienats como Postman,Insomnia
 
 <h2>Estructura de los Endpoints</h2>
+
+Franquicias
+
+POST /api/franquicias → Crear una franquicia.
+
+PUT  /api/franquicias/{id}/nombre → Actualizar el nombre de una franquicia.
+
+GET /api/franquicias/{id}/max-stock → Obtener el producto con más stock por sucursal en una franquicia.
+
+Sucursales
+
+POST /api/franquicias/{franquiciaId}/sucursales → Agregar una sucursal a una franquicia.
+
+PUT /api/franquicias/{franquiciaId}/sucursales/{sucursalId}/nombre → Actualizar el nombre de una sucursal.
+
+Productos
+
+POST /api/franquicias/{franquiciaId}/sucursales/{sucursalId}/productos → Agregar un producto a una sucursal.
+
+PUT /api/franquicias/{franquiciaId}/sucursales/{sucursalId}/productos/{productoId} → Actualizar el nombre de un producto.
+
+PUT /api/franquicias/{franquiciaId}/sucursales/{sucursalId}/productos/{productoId}/stock → Modificar el stock de un producto.
+
 
 
 
